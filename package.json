@@ -1,0 +1,34 @@
+{
+  "name": "@paulrberg/default-template",
+  "description": "To be used when building a new personal project from scratch",
+  "version": "1.0.0",
+  "author": {
+    "name": "Paul Razvan Berg",
+    "url": "https://paulrberg.com"
+  },
+  "bugs": {
+    "url": "https://github.com/paulrberg/default-template/issues"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.2",
+    "commitizen": "^4.2.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^4.3.0",
+    "prettier": "^2.1.2"
+  },
+  "homepage": "https://github.com/paulrberg/default-template#readme",
+  "license": "WTFPL",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulrberg/default-template"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "prettier": "prettier --config .prettierrc --write \"**/*.{js,json,md,ts}\"",
+    "prettier:list-different": "prettier --config .prettierrc --list-different \"**/*.{js,json,md,ts}\""
+  }
+}
